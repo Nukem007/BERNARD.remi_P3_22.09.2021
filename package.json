@@ -1,0 +1,22 @@
+{
+  "name": "web_p3",
+  "version": "1.0.0",
+  "description": "exercice_P3_ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nukem007/BERNARD.remi_P3_22.09.2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nukem007/BERNARD.remi_P3_22.09.2021/issues"
+  },
+  "homepage": "https://github.com/Nukem007/BERNARD.remi_P3_22.09.2021#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}

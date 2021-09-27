@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/fontawesome.css" /> -->
+    <link href="images/ohmyfood@2x.svg" rel="icon">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <title>OHMYFOOD-accueil</title>
+</head>
+
+<body>
+    <header>
+        <div class="titre_container">
+            <img src="/images/ohmyfood.png" alt="logo_oh_my_food">
+            <span class="arrow"><i class="fas fa-arrow-left"></i></span>
+        </div>
+
+    </header>
+    <main>
+        <aside>
+            <div class="geo">
+                <span class="geo__icon"><i class="fas fa-map-marker-alt"></i></span>
+                <p class="geo__text">Paris, Belleville</p>
+            </div>
+            <form>
+                <div class="reserv">
+                    <p class="reserv__cont reserv__cont--bold">Réservez le menu qui</p>
+                    <p class="reserv__cont reserv__cont--bold">vous convient</p>
+                </div>
+                <div class="reserv">
+                    <p class="reserv__cont">Découvrez des restaurants d'exception,</p>
+                    <p class="reserv__cont"> séléctionnés par nos soins.</p>
+                </div>
+                <button class="but_sub" type="submit">
+                    Explorer nos restaurants
+                </button>
+            </form>
+        </aside>
+        <nav>
+            <div class="fonction">
+                <h2>Fonctionnement</h2>
+                <a href="#restaurant" class="fonction__cont">
+                    <div class="dot">1</div>
+                    <h3 class="purple mobile">Choisissez un restaurant</h3>
+                </a>
+                <a href="#" class="fonction__cont">
+                    <div class="dot ">2</div>
+                    <h3 class="purple list">Composez votre menu</h3>
+                </a>
+                <a href="#" class="fonction__cont">
+                    <div class="dot">3</div>
+                    <h3 class="purple store">Dégustez au restaurant</h3>
+                </a>
+            </div>
+        </nav>
+        <section id="restaurant">
+
+            <div class="resto">
+
+                <h2>Restaurants</h2>
+
+                <a class="resto__card--1" href="#">
+                    <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                    <div class="cartouche">
+                        <p class="bold">La palette du goût</p>
+                        <p>Ménilmontant</p>
+                    </div>
+                </a>
+
+                <a class="resto__card--2" href="#">
+                    <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La Note enchantée">
+                    <div class="cartouche">
+                        <p class="bold">La Note enchantée</p>
+                        <p>Charonne</p>
+                    </div>
+                </a>
+
+                <a class="resto__card--3" href="#">
+                    <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                    <div class="cartouche">
+                        <p class="bold">À la française</p>
+                        <p>Cité Rouge</p>
+                    </div>
+                </a>
+
+                <a class="resto__card--4" href="#">
+                    <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="Le délice des sens">
+                    <div class="cartouche">
+                        <p class="bold">Le délice des sens</p>
+                        <p>Folie Méricourt</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+</body>
+<footer>
+    <img class="logo_footer" src="./images/ohmyfood@2x.svg">
+    <div class="footer_container">
+        <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+        <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+        <p>Mentions légales</p>
+        <p>Contact</p>
+    </div>
+
+</footer>
+
+</html>
