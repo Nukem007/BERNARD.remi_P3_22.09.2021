@@ -62,14 +62,19 @@
 
             <div class="resto">
 
-                <h2>Restaurants</h2>
+                <h2 class="shrik">Restaurants</h2>
 
                 <a class="resto__card--1" href="#">
                     <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                     <div class="cartouche">
                         <p class="bold">La palette du goût</p>
                         <p>Ménilmontant</p>
-                    </div>
+                        <label class="favorite-checkbox">
+                            <input type="checkbox" />
+                            <i class=" far fa-heart unchecked"></i>
+                            <i class=" fas fa-heart checked"></i>                          
+                        </label>
+                    </div>                
                 </a>
 
                 <a class="resto__card--2" href="#">
@@ -77,6 +82,11 @@
                     <div class="cartouche">
                         <p class="bold">La Note enchantée</p>
                         <p>Charonne</p>
+                        <label class="favorite-checkbox">
+                            <input type="checkbox" />
+                            <i class=" far fa-heart unchecked"></i>
+                            <i class=" fas fa-heart checked"></i>                          
+                        </label>
                     </div>
                 </a>
 
@@ -85,6 +95,11 @@
                     <div class="cartouche">
                         <p class="bold">À la française</p>
                         <p>Cité Rouge</p>
+                        <label class="favorite-checkbox">
+                            <input type="checkbox" />
+                            <i class=" far fa-heart unchecked"></i>
+                            <i class=" fas fa-heart checked"></i>                          
+                        </label>
                     </div>
                 </a>
 
@@ -94,6 +109,11 @@
                     <div class="cartouche">
                         <p class="bold">Le délice des sens</p>
                         <p>Folie Méricourt</p>
+                        <label class="favorite-checkbox">
+                            <input type="checkbox" />
+                            <i class=" far fa-heart unchecked"></i>
+                            <i class=" fas fa-heart checked"></i>                          
+                        </label>
                     </div>
                 </a>
             </div>
@@ -102,12 +122,14 @@
 
 </body>
 <footer>
+    <h5 class="footer__titre">ohmyfood</h5>
     <img class="logo_footer" src="./images/ohmyfood@2x.svg">
     <div class="footer_container">
         <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
         <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
         <p>Mentions légales</p>
         <p>Contact</p>
+        <a class="footer footer__mail" href="mailto:adresse@serveur.com">Contact</a>
     </div>
 
 </footer>

@@ -31,11 +31,12 @@ img {
   font-weight: 16px;
 }
 @font-face {
-  font-family: "Shrinkhand", serif;
-  src: url(https://fonts.gstatic.com/s/shrikhand/v6/a8IbNovtLWfR7T7bMJwrGIKR4zg.woff2) format("woff2");
-  font-weight: normal;
+  font-family: "Shrikhand";
   font-style: normal;
-  font-weight: 16px;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/shrikhand/v6/a8IbNovtLWfR7T7bMJwrA4KR.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 p {
   font-family: "Roboto", sans-serif;
@@ -50,10 +51,10 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", serif;
   font-size: 1.6em;
   margin: 0px;
-  font-weight: bold;
+  font-weight: normal;
   width: 85%;
   max-width: 870px;
   height: 35px;
@@ -67,16 +68,23 @@ h3 {
 }
 
 h5 {
-  font-family: "Shrinkhand", serif;
+  font-family: "Shrikhand", serif;
   font-style: oblique;
   font-size: 1.5em;
-  font-weight: 900;
-  margin: 1em 0;
-  font-stretch: ultra-expanded;
+  font-weight: 100;
+  margin-bottom: 1em;
+  font-stretch: 150%;
+  /**ne marche pas**/
 }
 
 .bold {
   font-weight: bold;
+}
+
+.mail {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 0px;
 }
 
 html {
@@ -256,6 +264,7 @@ button:hover {
 #restaurant {
   width: 100%;
   background-color: #ebebeb;
+  padding-top: 1.5rem;
 }
 
 .resto {
@@ -268,6 +277,13 @@ button:hover {
   justify-content: center;
   margin: auto;
 }
+.resto a {
+  height: 18em;
+}
+.resto a:hover img {
+  box-shadow: #26394da2 2px 14px 14px -10px;
+  transition: 0.3s;
+}
 
 .resto img {
   width: 335px;
@@ -277,7 +293,7 @@ button:hover {
   object-fit: cover;
   border-radius: 1em;
   margin: 1em;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: #26394da2 0px 9px 11px -10px;
 }
 
 .cartouche {
@@ -295,6 +311,31 @@ button:hover {
   flex-wrap: nowrap;
   align-items: flex-start;
 }
+.cartouche .favorite-checkbox {
+  position: absolute;
+  right: 1em;
+  font-size: 1.5em;
+}
+.cartouche .fas {
+  position: relative;
+  font-size: 1em;
+  padding: 0px;
+  background: linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+.cartouche .favorite-checkbox input,
+.cartouche .favorite-checkbox .checked {
+  display: none;
+}
+.cartouche .favorite-checkbox input:checked ~ .checked {
+  display: inline-block;
+}
+.cartouche .favorite-checkbox input:checked ~ .unchecked {
+  display: none;
+}
 
 .cartouche p {
   padding-left: 1em;
@@ -308,13 +349,20 @@ footer {
   width: 100%;
   color: white;
   background-color: #323232;
-  padding: 2em 7.5%;
+  padding: 2em 7.5% 2em 7.5%;
+}
+
+footer span {
+  font-family: "Shrinkhand";
+  font-size: 1rem;
+  margin: 0px;
 }
 
 .logo_footer {
   filter: invert(100%);
   margin-bottom: 1em;
   width: 100px;
+  display: none;
 }
 
 .footer_container p {
@@ -328,6 +376,20 @@ footer {
 
 .fa-utensils {
   padding-right: 0.9em;
+}
+
+.mail {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 0px;
+  color: white;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 0px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

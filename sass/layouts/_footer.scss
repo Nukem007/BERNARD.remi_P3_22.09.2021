@@ -2,14 +2,20 @@ footer {
     width: 100%;
     color: white;
     background-color: #323232;
-    padding: 2em 7.5%;
+    padding: 2em 7.5% 2em 7.5%;
+}
 
+footer span {
+    font-family: 'Shrinkhand';
+    font-size: 1rem;
+    margin: 0px;
 }
 
 .logo_footer{
     filter: invert(100%);
     margin-bottom: 1em;
     width: 100px;
+    display: none;
 }
 
 .footer_container p {
@@ -24,4 +30,18 @@ footer {
 
 .fa-utensils{
     padding-right: 0.9em;
+}
+
+.mail{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0px;
+    color: white;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0px;
+    color: white;
 }
