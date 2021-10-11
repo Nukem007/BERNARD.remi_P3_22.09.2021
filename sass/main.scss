@@ -1,8 +1,9 @@
-// @import "node_modules/scss/fontawesome.scss"
+
 @import "./abstracts/variables";
 @import "./base/reset";
 @import "./base/typography";
-
+@import "./layouts/header.scss";
+// @import "node_modules/scss/fontawesome.scss"
 
 
 html {
@@ -10,33 +11,7 @@ html {
     margin   : auto;
 }
 
-header {
-    width : 100%;
-    height: 3.9rem;
-}
 
-.titre_container {
-    display        : flex;
-    width          : 100%;
-    height         : 3.9rem;
-    flex-direction : row;
-    align-content  : center;
-    justify-content: center;
-    align-items    : center;
-}
-
-.arrow {
-    position: absolute;
-    left    : 2rem;
-    top     : 1.4rem;
-    display : block;
-}
-
-header img {
-    width     : 9rem;
-    box-sizing: content-box;
-    object-fit: cover;
-}
 
 .geo {
     background-color: #ebebeb;
@@ -64,7 +39,7 @@ header img {
 
 }
 
-form {
+.form_reserv {
     height          : 287px;
     background-color: #f6f6f6;
     display         : flex;
@@ -206,7 +181,7 @@ button {
     justify-content: center;
     margin         : auto;
 
-    a {
+    &__card {
         height: 18em;
         
         &:hover{
@@ -235,7 +210,7 @@ button {
     width           : 335px;
     position        : relative;
     top             : -96px;
-    left            : 1.0em;
+    left            : 0.9em;
     background-color: white;
     border-radius   : 0 0 1em 1em;
     display         : flex;
@@ -250,40 +225,33 @@ button {
         right    : 1em;
         font-size: 1.5em;
     }
-    .fas {
-        position               : relative;
-        font-size              : 1em;
-        padding                : 0px;
-        background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-        background-clip        : border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow            : none;
-    }
+    
+}
+    
+.fas {
+    position               : relative;
+    font-size              : 1em;
+    padding                : 0px;
+    background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
+    background-clip        : border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow            : none;
+}
 
-    .favorite-checkbox input,
-    .favorite-checkbox .checked {
-        display: none;
-    }
+.favorite-checkbox input,
+.favorite-checkbox .checked {
+    display: none;
+}
 
-    .favorite-checkbox input:checked~.checked {
-        display: inline-block;
-    }
+.favorite-checkbox input:checked~.checked {
+    display: inline-block;
+}
 
-    .favorite-checkbox input:checked~.unchecked {
-        display: none;
-    }
-
-    // span {
-    //     position : absolute;
-    //     right    : 1em;
-    //     font-size: 1.5em;
-
-    //     .fas {
-    //         position   : relative;
-    //         font-size  : 1em;
-    //         padding    : 0px;
-    //         color      : white;
+.favorite-checkbox input:checked~.unchecked {
+    display: none;
+}
+    
     //         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
     //         &:hover,
@@ -297,36 +265,8 @@ button {
     //         }
     //     }
     // }
-}
-
-//         &:hover {
-//             .far:hover {
-//                 display: none;
-//                 z-index: 1;
-//                 .fas .fas{
-//                     display: block;
-//                     z-index: 5;
-//                 }
-//             }
-
-//         }
-//     }
-// }
-
-// color     : rgb(255, 121, 218);
-// background: linear-gradient(145deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
 
 
-// .fas.fa-heart::before
-
-// .fas.fa-heart::before {
-//     font-family: "Font Awesome 5 Free";
-
-//     content            : "\f004";
-//     color              : white;
-//     border-image-outset: 1px solid black;
-
-// }
 
 .cartouche p {
     padding-left: 1em;
@@ -335,7 +275,64 @@ button {
 a {
     text-decoration: none;
 }
+.main_div{
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    border-radius: 2.5em 2.5em 0 0;
+    margin-top: -1em;
+    background-color: $grey-city;
+    padding-top: 2em ;
+    position: relative;
+    top: -2.6em;
+}
+ .titre_img{
+    margin: 0 auto;
+    display: block;
+    max-width: 1024px;
+    height: 260px;
+    object-fit: cover;
+}
+.resto_titre_img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 240px;
+    top: 4rem;
+}
+section{
+    padding: 1rem 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+.carte {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 1em;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+}
+.condiment{
+    display: inline-block;
+    font-size: 0.9em;
+}
+.box__menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 0.4em;
+}
 
+// .form-check{
+//     position: relative;
+// }
+// .form-check input{
+//     position: absolute;
+//     opacity: 0;
+// }
 
 
 @import "./layouts/footer";

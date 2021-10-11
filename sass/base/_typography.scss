@@ -1,9 +1,8 @@
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     src        : url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
     font-weight: normal;
     font-style : normal;
-    font-weight: 16px;
 }
 
 
@@ -13,7 +12,6 @@
     font-weight  : 400;
     font-display : swap;
     src          : url(https://fonts.gstatic.com/s/shrikhand/v6/a8IbNovtLWfR7T7bMJwrA4KR.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 p {
@@ -23,8 +21,8 @@ p {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size  : 1rem;
+    font-family: 'Shrikhand', serif;
+    font-size  : 2.3rem;
     margin     : 0px;
 }
 
@@ -44,7 +42,11 @@ h3 {
     margin     : 0px;
     font-weight: bold;
 }
-
+h4{
+    font-family: 'Shrikhand', serif;
+    font-size  : 1.6em;
+    margin-bottom: 0.8em;
+}
 h5 {
     font-family  : 'Shrikhand', serif;
     font-style   : oblique;
@@ -55,6 +57,10 @@ h5 {
     /**ne marche pas**/
 }
 
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size  : 1.1em;
+}
 .bold {
     font-weight: bold;
 }
