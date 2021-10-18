@@ -53,7 +53,6 @@ h2 {
   font-size: 1.6em;
   margin: 0px;
   font-weight: normal;
-  width: 85%;
   max-width: 870px;
   height: 35px;
 }
@@ -77,8 +76,6 @@ h5 {
   font-size: 1.5em;
   font-weight: 100;
   margin-bottom: 1em;
-  font-stretch: 150%;
-  /**ne marche pas**/
 }
 
 h6 {
@@ -120,6 +117,13 @@ header .arrow {
   font-size: 1.5em;
 }
 
+.trait_vert {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  margin-top: 9px;
+}
+
 html {
   max-width: 100%;
   margin: auto;
@@ -147,6 +151,13 @@ html {
 
 .bold {
   font-size: 1em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prix {
   font-weight: bold;
 }
 
@@ -272,6 +283,10 @@ button:hover {
   padding-top: 1.5rem;
 }
 
+.shrik {
+  margin: auto;
+}
+
 .resto {
   width: 85%;
   max-width: 870px;
@@ -282,13 +297,6 @@ button:hover {
   justify-content: center;
   margin: auto;
 }
-.resto__card {
-  height: 18em;
-}
-.resto__card:hover img {
-  box-shadow: #26394da2 2px 14px 14px -10px;
-  transition: 0.3s;
-}
 
 .resto img {
   width: 335px;
@@ -298,15 +306,15 @@ button:hover {
   object-fit: cover;
   border-radius: 1em;
   margin: 1em;
-  box-shadow: #26394da2 0px 9px 11px -10px;
+  box-shadow: rgba(38, 57, 77, 0.64) 0px 9px 13px -3px;
 }
 
 .cartouche {
   height: 77px;
   width: 335px;
   position: relative;
-  top: -96px;
-  left: 0.9em;
+  top: -92px;
+  left: 16px;
   background-color: white;
   border-radius: 0 0 1em 1em;
   display: flex;
@@ -318,11 +326,29 @@ button:hover {
 }
 .cartouche .favorite-checkbox {
   position: absolute;
-  right: 1em;
+  left: 290px;
+  top: 25px;
   font-size: 1.5em;
 }
+.cartouche .favorite-checkbox .fas {
+  padding: 0px;
+  background: linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+@media (min-width: 1024px) {
+  .cartouche .favorite-checkbox:hover {
+    background: linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
+}
 
-.fas {
+.favorite-checkbox .fas {
   position: relative;
   font-size: 1em;
   padding: 0px;
@@ -331,6 +357,16 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: none;
+}
+@media (min-width: 1024px) {
+  .favorite-checkbox:hover {
+    padding: 0px;
+    background: linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
 }
 
 .favorite-checkbox input,
@@ -400,6 +436,9 @@ section {
 .condiment {
   display: inline-block;
   font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .box__menu {
@@ -409,6 +448,20 @@ section {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 0.4em;
+}
+
+.titre_coeur {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.titre_coeur .favorite-checkbox {
+  font-size: 1.5em;
+  padding-bottom: 11px;
+  padding-right: 10px;
 }
 
 footer {
