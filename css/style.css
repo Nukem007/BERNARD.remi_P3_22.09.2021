@@ -93,6 +93,10 @@ h6 {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   height: 3.9rem;
@@ -122,6 +126,25 @@ header .arrow {
   width: 40px;
   background-color: #99E2D0;
   margin-top: 9px;
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  border-radius: 3em;
+  border: none;
+  color: white;
+  font-size: 1em;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: #26394d 0px 9px 9px -10px;
+  transition: 0.2s;
+}
+button:hover {
+  z-index: 5;
+  width: 225px;
+  font-size: 1.02em;
+  box-shadow: #26394d 2px 12px 12px -10px;
+  opacity: 0.9;
 }
 
 html {
@@ -161,6 +184,28 @@ html {
   font-weight: bold;
 }
 
+.carte__1 {
+  animation: slideup ease-in-out 0.7s;
+}
+
+.carte__2 {
+  animation: slideup ease-in-out 0.8s;
+}
+
+.carte__3 {
+  animation: slideup ease-in-out 0.9s;
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .form_reserv {
   height: 287px;
   background-color: #f6f6f6;
@@ -183,25 +228,6 @@ html {
 .reserv__cont--bold {
   font-weight: bold;
   font-size: 1.6em;
-}
-
-button {
-  width: 220px;
-  height: 50px;
-  border-radius: 3em;
-  border: none;
-  color: white;
-  font-size: 1em;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: #26394d 0px 9px 9px -10px;
-  transition: 0.2s;
-}
-button:hover {
-  z-index: 5;
-  width: 225px;
-  font-size: 1.02em;
-  box-shadow: #26394d 2px 12px 12px -10px;
-  opacity: 0.9;
 }
 
 .fonction {
@@ -297,6 +323,9 @@ button:hover {
   justify-content: center;
   margin: auto;
 }
+.resto_card {
+  position: relative;
+}
 
 .resto img {
   width: 335px;
@@ -311,10 +340,10 @@ button:hover {
 
 .cartouche {
   height: 77px;
-  width: 335px;
-  position: relative;
-  top: -92px;
-  left: 16px;
+  width: 336px;
+  position: absolute;
+  margin-left: 0.9em;
+  margin-top: -5em;
   background-color: white;
   border-radius: 0 0 1em 1em;
   display: flex;
@@ -351,12 +380,18 @@ button:hover {
 .favorite-checkbox .fas {
   position: relative;
   font-size: 1em;
-  padding: 0px;
+  padding: 1px;
   background: linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: none;
+  transition-property: transform;
+  transition-duration: 3s;
+  scale: 1;
+}
+.favorite-checkbox .fas:active {
+  transform: scale(2em);
 }
 @media (min-width: 1024px) {
   .favorite-checkbox:hover {
@@ -376,6 +411,7 @@ button:hover {
 
 .favorite-checkbox input:checked ~ .checked {
   display: inline-block;
+  font-size: 1em;
 }
 
 .favorite-checkbox input:checked ~ .unchecked {
@@ -384,10 +420,6 @@ button:hover {
 
 .cartouche p {
   padding-left: 1em;
-}
-
-a {
-  text-decoration: none;
 }
 
 .main_div {
@@ -431,6 +463,7 @@ section {
   border-radius: 1em;
   margin: 1em auto;
   padding: 0.5em 1em;
+  box-shadow: box-shadow rgba(38, 57, 77, 0.64) 0px 9px 13px -3px;
 }
 
 .condiment {

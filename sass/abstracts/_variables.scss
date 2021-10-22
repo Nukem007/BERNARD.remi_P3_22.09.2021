@@ -1,7 +1,9 @@
-$primary-color : #9356DC;
+$primary-color   : #9356DC;
 $secondary-color : #FF79DA;
-$tertiary-color : #99E2D0;
+$tertiary-color  : #99E2D0;
 
-$grey-city : #ebebeb;
-$darken-grey-city : darken (#ebebeb,80%);
-$fa-font-path:         "../webfonts" !default;
+$grey-city        : #ebebeb;
+$darken-grey-city : darken (#ebebeb, 80%);
+$fa-font-path     : "../webfonts" !default;
+
+$card-shadow      : box-shadow rgb(38 57 77 / 64%) 0px 9px 13px -3px;

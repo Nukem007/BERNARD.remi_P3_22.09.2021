@@ -40,9 +40,45 @@ html {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+//  overflow: hidden;
  .prix {
      font-weight: bold;
  }
+
+// .prix::before {
+//     content: "\f058";
+//     font-family: "Font Awesome 5 Free";
+//     color: white;
+//     position: relative;
+//     padding: 27px 40px 29px 20px;
+//     bottom: 13px;
+//     left: 8em;
+//     background-color: #99E2D0;
+// }
+
+.carte__1 {
+    // transition: .3s;
+    animation: slideup ease-in-out .7s;
+}
+.carte__2 {
+    // transition: 1.5s;
+    animation: slideup ease-in-out .8s;
+}
+.carte__3 {
+    // transition: 2s;
+    animation: slideup ease-in-out .9s;
+}
+@keyframes slideup {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
 .form_reserv {
     height          : 287px;
     background-color: #f6f6f6;
@@ -69,25 +105,7 @@ html {
     }
 }
 
-button {
-    width        : 220px;
-    height       : 50px;
-    border-radius: 3em;
-    border       : none;
-    color        : white;
-    font-size    : 1em;
-    background   : linear-gradient(to bottom right, #FF79DA, #9356DC);
-    box-shadow   : #26394d 0px 9px 9px -10px;
-    transition   : 00.2s;
 
-    &:hover {
-        z-index   : 5;
-        width     : 225px;
-        font-size : 1.02em;
-        box-shadow: #26394d 2px 12px 12px -10px;
-        opacity   : 0.9;
-    }
-}
 
 .fonction {
     height         : 440px;
@@ -186,6 +204,9 @@ button {
     align-content  : center;
     justify-content: center;
     margin         : auto;
+    &_card{
+        position: relative;
+    }
 }
 
 .resto img {
@@ -200,20 +221,21 @@ button {
 }
 
 .cartouche {
-    height          : 77px;
-    width           : 335px;
-    position        : relative;
-    top             : -92px;
-    left            : 16px;
+    height: 77px;
+    width: 336px;
+    position: absolute;
+    margin-left: 0.9em;
+    margin-top: -5em;
     background-color: white;
-    border-radius   : 0 0 1em 1em;
-    display         : flex;
-    color           : black;
-    justify-content : space-around;
-    flex-direction  : column;
-    flex-wrap       : nowrap;
-    align-items     : flex-start;
-
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    
+    
     .favorite-checkbox {
 
         position : absolute;
@@ -246,15 +268,21 @@ button {
     .fas {
         position               : relative;
         font-size              : 1em;
-        padding                : 0px;
+        padding                : 1px;
         background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
         background-clip        : border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow            : none;
-
+        transition-property: transform;
+        transition-duration: 3s;
+        scale: 1;
+        &:active{
+            transform: scale(2em);
+            
+        }
+        
     }
-
     @media (min-width: 1024px) {
         &:hover {
             padding                : 0px;
@@ -275,6 +303,7 @@ button {
 
 .favorite-checkbox input:checked~.checked {
     display: inline-block;
+    font-size: 1em;
 }
 
 .favorite-checkbox input:checked~.unchecked {
@@ -285,9 +314,7 @@ button {
     padding-left: 1em;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 .main_div {
     width           : 100%;
@@ -330,6 +357,7 @@ section {
     border-radius   : 1em;
     margin          : 1em auto;
     padding         : 0.5em 1em;
+    box-shadow: $card-shadow ;
 }
 
 .condiment {
