@@ -40,44 +40,7 @@ html {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-//  overflow: hidden;
- .prix {
-     font-weight: bold;
- }
 
-// .prix::before {
-//     content: "\f058";
-//     font-family: "Font Awesome 5 Free";
-//     color: white;
-//     position: relative;
-//     padding: 27px 40px 29px 20px;
-//     bottom: 13px;
-//     left: 8em;
-//     background-color: #99E2D0;
-// }
-
-.carte__1 {
-    // transition: .3s;
-    animation: slideup ease-in-out .7s;
-}
-.carte__2 {
-    // transition: 1.5s;
-    animation: slideup ease-in-out .8s;
-}
-.carte__3 {
-    // transition: 2s;
-    animation: slideup ease-in-out .9s;
-}
-@keyframes slideup {
-    from{
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px)
-    }
-}
 
 .form_reserv {
     height          : 287px;
@@ -276,9 +239,9 @@ html {
         text-shadow            : none;
         transition-property: transform;
         transition-duration: 3s;
-        scale: 1;
+        
         &:active{
-            transform: scale(2em);
+            transform: scale(2);
             
         }
         
@@ -357,7 +320,82 @@ section {
     border-radius   : 1em;
     margin          : 1em auto;
     padding         : 0.5em 1em;
-    box-shadow: $card-shadow ;
+    box-shadow: #26394da2 0px 9px 11px -10px;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content:"";
+        background: $tertiary-color;
+        display: inline-block;
+        position: absolute;
+        height: 70px;
+        right: 0%;
+        top: 0%;
+        transform: translate;
+        transition: all .4s ease-out;
+        width: 0%;
+    }
+    &:hover::before{
+        width: 70px;
+        
+    }
+    &:hover .prix{
+        padding-right: 60px;
+    }
+    &::after{
+        content: "\f058";
+        font-family: "Font Awesome 5 Free";
+        color: white;
+        display: inline-block;
+        position: absolute;
+        font-size: 1.5em;
+        right: -26px;
+        top: 20px;
+        padding: 0%;
+        margin: 0;
+        transition: all 0.4s ease-out;
+    }
+    &:hover::after{
+        transform: rotate(360deg);
+        right: 26px;
+    }
+}
+
+//  overflow: hidden;
+.prix {
+    font-weight: bold;
+    transition: all .4s ease-out;
+}
+
+// .prix::before {
+//     content: "\f058";
+//     font-family: "Font Awesome 5 Free";
+//     color: white;
+//     position: relative;
+//     padding: 27px 40px 29px 20px;
+//     bottom: 13px;
+//     left: 8em;
+//     background-color: #99E2D0;
+// }
+
+.carte__1 {
+   animation: slideup ease-in-out .5s;
+}
+.carte__2 {
+   animation: slideup ease-in-out .65s;
+}
+.carte__3 {
+   animation: slideup ease-in-out .8s;
+}
+@keyframes slideup {
+   from{
+       opacity: 0;
+       transform: translateY(30px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0px)
+   }
 }
 
 .condiment {

@@ -180,32 +180,6 @@ html {
   text-overflow: ellipsis;
 }
 
-.prix {
-  font-weight: bold;
-}
-
-.carte__1 {
-  animation: slideup ease-in-out 0.7s;
-}
-
-.carte__2 {
-  animation: slideup ease-in-out 0.8s;
-}
-
-.carte__3 {
-  animation: slideup ease-in-out 0.9s;
-}
-
-@keyframes slideup {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 .form_reserv {
   height: 287px;
   background-color: #f6f6f6;
@@ -388,10 +362,9 @@ html {
   text-shadow: none;
   transition-property: transform;
   transition-duration: 3s;
-  scale: 1;
 }
 .favorite-checkbox .fas:active {
-  transform: scale(2em);
+  transform: scale(2);
 }
 @media (min-width: 1024px) {
   .favorite-checkbox:hover {
@@ -463,9 +436,73 @@ section {
   border-radius: 1em;
   margin: 1em auto;
   padding: 0.5em 1em;
-  box-shadow: box-shadow rgba(38, 57, 77, 0.64) 0px 9px 13px -3px;
+  box-shadow: #26394da2 0px 9px 11px -10px;
+  position: relative;
+  overflow: hidden;
+}
+.carte::before {
+  content: "";
+  background: #99E2D0;
+  display: inline-block;
+  position: absolute;
+  height: 70px;
+  right: 0%;
+  top: 0%;
+  transform: translate;
+  transition: all 0.4s ease-out;
+  width: 0%;
+}
+.carte:hover::before {
+  width: 70px;
+}
+.carte:hover .prix {
+  padding-right: 60px;
+}
+.carte::after {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  display: inline-block;
+  position: absolute;
+  font-size: 1.5em;
+  right: -26px;
+  top: 20px;
+  padding: 0%;
+  margin: 0;
+  transition: all 0.4s ease-out;
+}
+.carte:hover::after {
+  transform: rotate(360deg);
+  right: 26px;
 }
 
+.prix {
+  font-weight: bold;
+  transition: all 0.4s ease-out;
+}
+
+.carte__1 {
+  animation: slideup ease-in-out 0.5s;
+}
+
+.carte__2 {
+  animation: slideup ease-in-out 0.65s;
+}
+
+.carte__3 {
+  animation: slideup ease-in-out 0.8s;
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .condiment {
   display: inline-block;
   font-size: 0.9em;
