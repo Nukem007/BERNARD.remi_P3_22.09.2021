@@ -133,13 +133,14 @@ html {
 }
 
 .list::before {
-    font-family  : "Font Awesome 5 Free";
-    font-weight  : 900;
-    content      : "\f0ca";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f54e";
     padding-right: 1.5em;
-    color        : darken($grey-city, 40%);
-
-
+    padding-top: 0.5em;
+    color: #858585;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
 }
 
 .store::before {
