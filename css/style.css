@@ -244,8 +244,8 @@ html {
   color: white;
   background-color: #9356DC;
   border-radius: 1em;
-  padding-left: 0.55em;
-  padding-top: 0.25em;
+  padding-left: 0.45em;
+  padding-top: 0.19em;
 }
 
 .purple::before {
@@ -264,12 +264,10 @@ html {
 .list::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f54e";
+  content: "\f0ca";
   padding-right: 1.5em;
   padding-top: 0.5em;
   color: #858585;
-  padding-bottom: 0.5em;
-  padding-left: 0.5em;
 }
 
 .store::before {
@@ -278,6 +276,7 @@ html {
   content: "\f54e";
   padding-right: 1.5em;
   color: #858585;
+  display: inline-block;
 }
 
 #restaurant {
