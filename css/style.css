@@ -334,23 +334,6 @@ html {
   top: 25px;
   font-size: 1.5em;
 }
-.cartouche .favorite-checkbox .fas {
-  padding: 0px;
-  background: linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: none;
-}
-@media (min-width: 1024px) {
-  .cartouche .favorite-checkbox:hover {
-    background: linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  }
-}
 
 .favorite-checkbox .fas {
   position: relative;

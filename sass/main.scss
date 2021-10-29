@@ -206,25 +206,6 @@ html {
         left     : 290px;
         top      : 25px;
         font-size: 1.5em;
-
-        .fas {
-            padding                : 0px;
-            background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-            background-clip        : border-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow            : none;
-        }
-
-        @media (min-width: 1024px) {
-            &:hover {
-                background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-                background-clip        : border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                text-shadow            : none;
-            }
-        }
     }
 }
 
@@ -277,8 +258,6 @@ html {
 .cartouche p {
     padding-left: 1em;
 }
-
-
 
 .main_div {
     width           : 100%;
@@ -362,22 +341,13 @@ section {
     }
 }
 
-//  overflow: hidden;
+
 .prix {
     font-weight: bold;
     transition: all .4s ease-out;
 }
 
-// .prix::before {
-//     content: "\f058";
-//     font-family: "Font Awesome 5 Free";
-//     color: white;
-//     position: relative;
-//     padding: 27px 40px 29px 20px;
-//     bottom: 13px;
-//     left: 8em;
-//     background-color: #99E2D0;
-// }
+
 
 .carte__1 {
    animation: slideup ease-in-out .5s;
