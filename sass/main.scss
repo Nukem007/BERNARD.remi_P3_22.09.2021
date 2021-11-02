@@ -2,6 +2,7 @@
 @import "./base/reset";
 @import "./base/typography";
 @import "./layouts/header.scss";
+@import "./abstracts/keyframes";
 @import "./components/buttons";
 // @import "node_modules/scss/fontawesome.scss"
 
@@ -221,6 +222,7 @@ html {
         text-shadow            : none;
         transition-property: transform;
         transition-duration: 3s;
+        opacity: 1;
         
         &:active{
             transform: scale(2);
@@ -229,14 +231,17 @@ html {
         
     }
     @media (min-width: 1024px) {
-        &:hover {
+        &:hover, &:focus {
             padding                : 0px;
             background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
             background-clip        : border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow            : none;
+            transform: scale(1.1);
+            opacity: 1;
         }
+        
     }
 }
 
@@ -311,7 +316,7 @@ section {
         height: 70px;
         right: 0%;
         top: 0%;
-        transform: translate;
+        // transform: translate;
         transition: all .4s ease-out;
         width: 0%;
     }
