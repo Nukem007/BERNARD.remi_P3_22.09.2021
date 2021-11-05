@@ -35,10 +35,10 @@ html {
 }
 
 .bold {
-    font-size  : 1em;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
+    font-size    : 1em;
+    font-weight  : bold;
+    white-space  : nowrap;
+    overflow     : hidden;
     text-overflow: ellipsis;
 }
 
@@ -107,15 +107,15 @@ html {
     }
 
     & .dot {
-        position: absolute;
-        left: -0.7em;
-        height: 25px;
-        width: 25px;
-        color: white;
+        position        : absolute;
+        left            : -0.7em;
+        height          : 25px;
+        width           : 25px;
+        color           : white;
         background-color: #9356DC;
-        border-radius: 1em;
-        padding-left: 0.45em;
-        padding-top: 0.19em;
+        border-radius   : 1em;
+        padding-left    : 0.45em;
+        padding-top     : 0.19em;
     }
 }
 
@@ -134,12 +134,12 @@ html {
 }
 
 .list::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0ca";
-    padding-right: 1.5em;
-    padding-top: 0.5em;
-    color        : darken($grey-city, 40%);
+    font-family      : "Font Awesome 5 Free";
+    font-weight      : 900;
+    content          : "\f0ca";
+    padding-right    : 1.5em;
+    padding-top      : 0.5em;
+    color            : darken($grey-city, 40%);
     // padding-bottom: 0.5em;
     // padding-left: 0.5em;
 }
@@ -157,9 +157,11 @@ html {
     background-color: $grey-city;
     padding-top     : 1.5rem;
 }
-.shrik{
+
+.shrik {
     margin: auto;
 }
+
 .resto {
     width          : 85%;
     max-width      : 870px;
@@ -169,37 +171,65 @@ html {
     align-content  : center;
     justify-content: center;
     margin         : auto;
-    &_card{
+
+    &_card {
         position: relative;
+    }
+    .nouveau {
+        position: absolute;
+        display: block;
+        background-color: #99E2D0;
+        color: $darken-green;
+        z-index: 80;
+        height: 30px;
+        width: 80px;
+        text-align: center;
+        font-size: 0.8em;
+        border-radius: 3px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 17.9em;
+        margin-top: -18em;
+        font-weight: bold;
+        
     }
 }
 
+
+
 .resto img {
-    width: 335px;
-    max-width: 335px;
-    height: 251px;
-    max-height: 251px;
-    object-fit: cover;
+    width        : 335px;
+    max-width    : 335px;
+    height       : 251px;
+    max-height   : 251px;
+    object-fit   : cover;
     border-radius: 1em;
-    margin: 1em;
-    box-shadow: rgb(38 57 77 / 64%) 0px 9px 13px -3px;
+    margin       : 1em;
+    box-shadow   : rgb(38 57 77 / 64%) 0px 9px 13px -3px;
+    transition   : 0.3s;
+
+    &:hover {
+        box-shadow: rgb(38 57 77 / 90%) 0px 17px 16px -4px;
+    }
 }
 
 .cartouche {
-    height: 77px;
-    width: 336px;
-    position: absolute;
-    margin-left: 0.9em;
-    margin-top: -5em;
+    height          : 77px;
+    width           : 336px;
+    position        : absolute;
+    margin-left     : 0.9em;
+    margin-top      : -5em;
     background-color: white;
-    border-radius: 0 0 1em 1em;
-    display: flex;
-    color: black;
-    justify-content: space-around;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    
+    border-radius   : 0 0 1em 1em;
+    display         : flex;
+    color           : black;
+    justify-content : space-around;
+    flex-direction  : column;
+    flex-wrap       : nowrap;
+    align-items     : flex-start;
     
     .favorite-checkbox {
 
@@ -212,36 +242,39 @@ html {
 
 .favorite-checkbox {
     .fas {
-        position               : relative;
-        font-size              : 1em;
-        padding                : 1px;
-        background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-        background-clip        : border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow            : none;
-        transition-property: transform;
-        transition-duration: 3s;
-        opacity: 1;
-        
-        &:active{
+        position                  : relative;
+        font-size                 : 1em;
+        // padding                : 1px;
+        background                : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
+        background-clip           : border-box;
+        -webkit-background-clip   : text;
+        -webkit-text-fill-color   : transparent;
+        text-shadow               : none;
+        transition-property       : transform;
+        transition-duration       : 3s;
+        opacity                   : 1;
+
+        &:active {
             transform: scale(2);
-            
+
         }
-        
+
     }
+
     @media (min-width: 1024px) {
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             padding                : 0px;
             background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
             background-clip        : border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow            : none;
-            transform: scale(1.1);
-            opacity: 1;
+            transform              : scale(1.1);
+            opacity                : 1;
         }
-        
+
     }
 }
 
@@ -252,7 +285,7 @@ html {
 }
 
 .favorite-checkbox input:checked~.checked {
-    display: inline-block;
+    display  : inline-block;
     font-size: 1em;
 }
 
@@ -305,80 +338,89 @@ section {
     border-radius   : 1em;
     margin          : 1em auto;
     padding         : 0.5em 1em;
-    box-shadow: #26394da2 0px 9px 11px -10px;
-    position: relative;
-    overflow: hidden;
-    &::before{
-        content:"";
-        background: $tertiary-color;
-        display: inline-block;
-        position: absolute;
-        height: 70px;
-        right: 0%;
-        top: 0%;
+    box-shadow      : #26394da2 0px 9px 11px -10px;
+    position        : relative;
+    overflow        : hidden;
+
+    &::before {
+        content     : "";
+        background  : $tertiary-color;
+        display     : inline-block;
+        position    : absolute;
+        height      : 70px;
+        right       : 0%;
+        top         : 0%;
         // transform: translate;
-        transition: all .4s ease-out;
-        width: 0%;
+        transition  : all .4s ease-out;
+        width       : 0%;
     }
-    &:hover::before{
+
+    &:hover::before {
         width: 70px;
-        
+
     }
-    &:hover .prix{
+
+    &:hover .prix {
         padding-right: 60px;
     }
-    &::after{
-        content: "\f058";
+
+    &::after {
+        content    : "\f058";
         font-family: "Font Awesome 5 Free";
-        color: white;
-        display: inline-block;
-        position: absolute;
-        font-size: 1.5em;
-        right: -26px;
-        top: 20px;
-        padding: 0%;
-        margin: 0;
-        transition: all 0.4s ease-out;
+        color      : white;
+        display    : inline-block;
+        position   : absolute;
+        font-size  : 1.5em;
+        right      : -26px;
+        top        : 20px;
+        padding    : 0%;
+        margin     : 0;
+        transition : all 0.4s ease-out;
     }
-    &:hover::after{
+
+    &:hover::after {
         transform: rotate(360deg);
-        right: 26px;
+        right    : 26px;
     }
 }
 
 
 .prix {
     font-weight: bold;
-    transition: all .4s ease-out;
+    transition : all .4s ease-out;
 }
 
 
 
 .carte__1 {
-   animation: slideup ease-in-out .5s;
+    animation: slideup ease-in-out .5s;
 }
+
 .carte__2 {
-   animation: slideup ease-in-out .65s;
+    animation: slideup ease-in-out .65s;
 }
+
 .carte__3 {
-   animation: slideup ease-in-out .8s;
+    animation: slideup ease-in-out .8s;
 }
+
 @keyframes slideup {
-   from{
-       opacity: 0;
-       transform: translateY(30px);
-   }
-   to {
-       opacity: 1;
-       transform: translateY(0px)
-   }
+    from {
+        opacity  : 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity  : 1;
+        transform: translateY(0px)
+    }
 }
 
 .condiment {
-    display  : inline-block;
-    font-size: 0.9em;
-    white-space: nowrap;
-    overflow: hidden;
+    display      : inline-block;
+    font-size    : 0.9em;
+    white-space  : nowrap;
+    overflow     : hidden;
     text-overflow: ellipsis;
 
 }
