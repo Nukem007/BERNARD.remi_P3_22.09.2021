@@ -1,0 +1,78 @@
+.fonction {
+    height         : 440px;
+    width          : 100%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    align-items    : center;
+}
+
+.fonction__cont {
+    text-decoration : none;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    flex-wrap       : nowrap;
+    justify-content : space-around;
+    width           : 85%;
+    max-width       : 870px;
+    height          : 75px;
+    background-color: #f6f6f6;
+    border-radius   : 1em;
+    box-shadow      : #26394da2 0px 9px 11px -10px;
+    position        : relative;
+    color           : black;
+    transition      : 0.3s;
+
+    &:hover,
+    &:focus {
+        box-shadow: #26394da2 2px 14px 14px -10px;
+
+        .purple::before {
+            color: $primary-color;
+        }
+    }
+
+    & .dot {
+        position        : absolute;
+        left            : -0.7em;
+        height          : 25px;
+        width           : 25px;
+        color           : white;
+        background-color: #9356DC;
+        border-radius   : 1em;
+        padding-left    : 0.45em;
+        padding-top     : 0.19em;
+    }
+}
+
+.purple::before {
+    font-size: 1.2em;
+}
+
+.mobile::before {
+    font-family  : "Font Awesome 5 Free";
+    font-weight  : 900;
+    content      : "\f3cd";
+    padding-right: 1.5em;
+    padding-left : 0.6em;
+    color        : darken($grey-city, 40%);
+
+}
+
+.list::before {
+    font-family      : "Font Awesome 5 Free";
+    font-weight      : 900;
+    content          : "\f0ca";
+    padding-right    : 1.5em;
+    padding-top      : 0.5em;
+    color            : darken($grey-city, 40%);
+}
+
+.store::before {
+    font-family  : "Font Awesome 5 Free";
+    font-weight  : 900;
+    content      : "\f54e";
+    padding-right: 1.5em;
+    color        : #858585;
+}

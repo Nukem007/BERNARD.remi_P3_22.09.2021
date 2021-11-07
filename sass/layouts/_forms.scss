@@ -1,0 +1,23 @@
+.form_reserv {
+    height          : 287px;
+    background-color: #f6f6f6;
+    display         : flex;
+    flex-direction  : column;
+    align-content   : center;
+    justify-content : space-evenly;
+    align-items     : center;
+}
+
+.reserv {
+    display    : flex;
+    flex-flow  : column;
+    align-items: center;
+    &__cont {
+        display  : inline-block;
+        font-size: 1.1em;
+        &--bold {
+            font-weight: bold;
+            font-size  : 1.6em;
+        }
+    }
+}

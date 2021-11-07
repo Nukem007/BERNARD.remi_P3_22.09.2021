@@ -60,10 +60,14 @@ h6 {
     font-family: 'Roboto', sans-serif;
     font-size  : 1.1em;
 }
-.bold {
-    font-weight: bold;
-}
 
+.bold {
+    font-size    : 1em;
+    font-weight  : bold;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}
 .mail {
     font-family: 'Roboto', sans-serif;
     font-size  : 1rem;

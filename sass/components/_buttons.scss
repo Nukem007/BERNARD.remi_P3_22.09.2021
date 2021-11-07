@@ -14,7 +14,7 @@ button {
     font-size    : 1em;
     background   : linear-gradient(to bottom right, #FF79DA, #9356DC);
     box-shadow   : #26394d 0px 9px 9px -10px;
-    transition   : 00.2s;
+    transition   : 00.4s;
 
     &:hover {
         z-index   : 5;
@@ -22,9 +22,17 @@ button {
         font-size : 1.02em;
         box-shadow: #26394d 2px 12px 12px -10px;
         opacity   : 0.9;
+        
     }
 }
 
+button {
+    cursor: pointer;
+}
+
+.far .fa-heart {
+    cursor: pointer;
+}
 // ancienne version du coeur
 
 // .favorite-checkbox {

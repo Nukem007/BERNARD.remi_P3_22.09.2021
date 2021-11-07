@@ -3,7 +3,8 @@ $secondary-color : #FF79DA;
 $tertiary-color  : #99E2D0;
 
 $grey-city        : #ebebeb;
-$darken-grey-city : darken (#ebebeb, 80%);
+$darken-grey-city : darken(#ebebeb, 35%);
+$darken-green     : darken($tertiary-color, 35%);
 $fa-font-path     : "../webfonts" !default;
 
 // $card-shadow      : box-shadow #26394da2 0px 9px 11px -10px;
