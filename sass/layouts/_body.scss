@@ -207,6 +207,40 @@ section {
     position        : relative;
     overflow        : hidden;
 
+    &__1 {
+        animation: slideup ease-in-out .5s;
+    }
+
+    &__2 {
+        animation: slideup ease-in-out .65s;
+    }
+
+    &__3 {
+        animation: slideup ease-in-out .8s;
+    }
+
+    .box__menu {
+        display        : flex;
+        flex-wrap      : nowrap;
+        flex-direction : row;
+        justify-content: space-between;
+        align-items    : flex-end;
+        margin-top     : 0.4em;
+
+        .condiment {
+            display      : inline-block;
+            font-size    : 0.9em;
+            white-space  : nowrap;
+            overflow     : hidden;
+            text-overflow: ellipsis;
+        }
+
+        .prix {
+            font-weight: bold;
+            transition : all .4s ease-out;
+        }
+    }
+
     &::before {
         content   : "";
         background: $tertiary-color;
@@ -248,48 +282,3 @@ section {
     }
 }
 
-.carte__1 {
-    animation: slideup ease-in-out .5s;
-}
-
-.carte__2 {
-    animation: slideup ease-in-out .65s;
-}
-
-.carte__3 {
-    animation: slideup ease-in-out .8s;
-}
-
-@keyframes slideup {
-    from {
-        opacity  : 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity  : 1;
-        transform: translateY(0px)
-    }
-}
-
-.box__menu {
-    display        : flex;
-    flex-wrap      : nowrap;
-    flex-direction : row;
-    justify-content: space-between;
-    align-items    : flex-end;
-    margin-top     : 0.4em;
-
-    .condiment {
-        display      : inline-block;
-        font-size    : 0.9em;
-        white-space  : nowrap;
-        overflow     : hidden;
-        text-overflow: ellipsis;
-    }
-
-    .prix {
-        font-weight: bold;
-        transition : all .4s ease-out;
-    }
-}

@@ -289,6 +289,34 @@ section .resto .nouveau {
   position: relative;
   overflow: hidden;
 }
+.carte__1 {
+  animation: slideup ease-in-out 0.5s;
+}
+.carte__2 {
+  animation: slideup ease-in-out 0.65s;
+}
+.carte__3 {
+  animation: slideup ease-in-out 0.8s;
+}
+.carte .box__menu {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 0.4em;
+}
+.carte .box__menu .condiment {
+  display: inline-block;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.carte .box__menu .prix {
+  font-weight: bold;
+  transition: all 0.4s ease-out;
+}
 .carte::before {
   content: "";
   background: #99E2D0;
@@ -322,48 +350,6 @@ section .resto .nouveau {
 .carte:hover::after {
   transform: rotate(360deg);
   right: 26px;
-}
-
-.carte__1 {
-  animation: slideup ease-in-out 0.5s;
-}
-
-.carte__2 {
-  animation: slideup ease-in-out 0.65s;
-}
-
-.carte__3 {
-  animation: slideup ease-in-out 0.8s;
-}
-
-@keyframes slideup {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-.box__menu {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 0.4em;
-}
-.box__menu .condiment {
-  display: inline-block;
-  font-size: 0.9em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.box__menu .prix {
-  font-weight: bold;
-  transition: all 0.4s ease-out;
 }
 
 html {
@@ -493,9 +479,41 @@ header .arrow {
   padding-top: 0.19em;
 }
 
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes spinner-out {
+  0% {
+    z-index: 100;
+    opacity: 0.8;
+  }
+  90% {
+    z-index: 100;
+    opacity: 0.8;
+  }
+  100% {
+    display: none;
+  }
+}
 .lds-spinner {
   color: #FF79DA;
-  /* display: inline-block; */
+  /* display               : inline-block; */
   position: relative;
   width: 80px;
   height: 80px;
@@ -585,15 +603,6 @@ header .arrow {
   animation-delay: 0s;
 }
 
-@keyframes lds-spinner {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
 .loading {
   position: fixed;
   z-index: -1;
@@ -608,19 +617,6 @@ header .arrow {
   cursor: wait;
 }
 
-@keyframes spinner-out {
-  0% {
-    z-index: 100;
-    opacity: 0.8;
-  }
-  90% {
-    z-index: 100;
-    opacity: 0.8;
-  }
-  100% {
-    display: none;
-  }
-}
 .trait_vert {
   height: 3px;
   width: 40px;

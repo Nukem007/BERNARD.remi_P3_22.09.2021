@@ -1,20 +1,62 @@
+@keyframes slideup {
+    from {
+        opacity  : 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity  : 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes spinner-out {
+    0% {
+        z-index: 100;
+        opacity: 0.8;
+
+    }
+
+    90% {
+        z-index: 100;
+        opacity: 0.8;
+    }
+
+    100% {
+        // z-index: -1;
+        // opacity: 0;
+        display: none;
+    }
+}
+
 .lds-spinner {
-    color: $secondary-color;
-    /* display: inline-block; */
-    position: relative;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 16em;
-    z-index: 1000;
+    color                    : $secondary-color;
+    /* display               : inline-block; */
+    position                 : relative;
+    width                    : 80px;
+    height                   : 80px;
+    display                  : flex;
+    margin-left              : auto;
+    margin-right             : auto;
+    padding-top              : 16em;
+    z-index                  : 1000;
     animation-iteration-count: 4;
 }
 
 .lds-spinner div {
-    transform-origin: 40px 40px;
-    animation       : lds-spinner 1.2s linear infinite;
+    transform-origin         : 40px 40px;
+    animation                : lds-spinner 1.2s linear infinite;
     animation-iteration-count: 3;
 }
 
@@ -90,48 +132,16 @@
     animation-delay: 0s;
 }
 
-@keyframes lds-spinner {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        display: none;
-    }
-}
-
-
 .loading {
-    position  : fixed;
-    z-index   : -1;
-    background-color: black;
-    top       : 0px;
-    left      : 0px;
-    height    : 100%;
-    width     : 100%;
-    opacity: 0;
-    animation       : spinner-out 3s linear ;
+    position                 : fixed;
+    z-index                  : -1;
+    background-color         : black;
+    top                      : 0px;
+    left                     : 0px;
+    height                   : 100%;
+    width                    : 100%;
+    opacity                  : 0;
+    animation                : spinner-out 3s linear;
     animation-iteration-count: 1;
-    cursor: wait;
-    
-}
-
-@keyframes spinner-out {
-    0% {
-        z-index: 100;
-        opacity: 0.8;
-
-    }
-
-    90% {
-        z-index: 100;
-        opacity: 0.8;
-    }
-
-    100% {
-        // z-index: -1;
-        // opacity: 0;
-        display: none;
-    }
+    cursor                   : wait;
 }
