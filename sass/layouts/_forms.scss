@@ -1,5 +1,5 @@
 .form_reserv {
-    height          : 287px;
+    // height          : 287px;
     background-color: #f6f6f6;
     display         : flex;
     flex-direction  : column;
@@ -21,3 +21,21 @@
         }
     }
 }
+
+.form_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -2.6em;
+    padding-bottom: 2em;
+    align-items: center;
+}
+
+// main > div > .cont_but_pages {
+//     width: 100%;
+// display: flex;
+// flex-direction: column;
+// margin-bottom: -2.6em;
+// align-items: center;
+// height: 5em;
+// }
