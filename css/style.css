@@ -214,12 +214,6 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: none;
-  transition-property: transform;
-  transition-duration: 3s;
-  opacity: 1;
-}
-.favorite-checkbox .fas:active {
-  transform: scale(2);
 }
 @media (min-width: 1024px) {
   .favorite-checkbox:hover, .favorite-checkbox:focus {
@@ -229,8 +223,6 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
-    transform: scale(1.1);
-    opacity: 1;
   }
 }
 
