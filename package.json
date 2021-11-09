@@ -4,7 +4,8 @@
   "description": "exercice_P3_ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css"
   },
   "repository": {
     "type": "git",
