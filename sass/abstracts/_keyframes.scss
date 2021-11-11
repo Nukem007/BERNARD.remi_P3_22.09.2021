@@ -34,15 +34,12 @@
     }
 
     100% {
-        // z-index: -1;
-        // opacity: 0;
         display: none;
     }
 }
 
 .lds-spinner {
     color                    : $secondary-color;
-    /* display               : inline-block; */
     position                 : relative;
     width                    : 80px;
     height                   : 80px;

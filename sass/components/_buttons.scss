@@ -1,9 +1,4 @@
-.trait_vert {
-    height: 3px;
-    width: 40px;
-    background-color: $tertiary-color;
-    margin-top: 9px;
-}
+
 
 button {
     width        : 220px;
@@ -30,35 +25,3 @@ button {
 .far .fa-heart {
     cursor: pointer;
 }
-// ancienne version du coeur
-
-// .favorite-checkbox {
-//     .fas {
-//         position               : relative;
-//         font-size              : 1em;
-//         padding                : 1px;
-//         background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-//         background-clip        : border-box;
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         text-shadow            : none;
-//         transition-property: transform;
-//         transition-duration: 3s;
-        
-//         &:active{
-//             transform: scale(2);
-            
-//         }
-        
-//     }
-//     @media (min-width: 1024px) {
-//         &:hover {
-//             padding                : 0px;
-//             background             : linear-gradient(145deg, #ff79da 0%, #9356dc 100%);
-//             background-clip        : border-box;
-//             -webkit-background-clip: text;
-//             -webkit-text-fill-color: transparent;
-//             text-shadow            : none;
-//         }
-//     }
-// }

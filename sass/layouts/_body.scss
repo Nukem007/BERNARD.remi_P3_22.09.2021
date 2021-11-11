@@ -25,7 +25,12 @@ section {
     width           : 100%;
     background-color: $grey-city;
     padding-top     : 1.5rem;
-
+    .trait_vert {
+        height: 3px;
+        width: 40px;
+        background-color: $tertiary-color;
+        margin-top: 9px;
+    }
     .shrik {
         margin: auto;
     }

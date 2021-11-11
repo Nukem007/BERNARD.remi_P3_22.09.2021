@@ -3,45 +3,37 @@ footer {
     color: white;
     background-color: #323232;
     padding: 2em 7.5% 2em 7.5%;
+    .footer_container {
+        p {
+            font-family: 'Shrinkhand';
+            font-size: 1rem;
+            margin: 0em 0em 0.5em 0em;
+            margin-bottom: 0.5em;
+            .fa-utensils, .fa-hands-helping {
+                padding-right: 0.5em;
+                font-size: 0.8em;
+            }
+            
+            .fa-utensils{
+                padding-right: 0.9em;
+            }
+        }
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            margin: 0px;
+            color: white;
+            .mail{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                margin: 0px;
+                color: white;
+            }
+        }
+    } 
 }
 
-footer span {
-    font-family: 'Shrinkhand';
-    font-size: 1rem;
-    margin: 0px;
-}
 
-.logo_footer{
-    filter: invert(100%);
-    margin-bottom: 1em;
-    width: 100px;
-    display: none;
-}
 
-.footer_container p {
-    margin-bottom: 0.5em;
-    
-}
 
-.fa-utensils, .fa-hands-helping {
-    padding-right: 0.5em;
-    font-size: 0.8em;
-}
 
-.fa-utensils{
-    padding-right: 0.9em;
-}
-
-.mail{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    margin: 0px;
-    color: white;
-}
-
-a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    margin: 0px;
-    color: white;
-}

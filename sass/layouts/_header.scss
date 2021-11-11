@@ -5,23 +5,25 @@ html {
 header {
     width : 100%;
     height: 3.9rem;
+    .titre_container {
+        display        : flex;
+        width          : 100%;
+        height         : 3.9rem;
+        flex-direction : row;
+        align-content  : center;
+        justify-content: center;
+        align-items    : center;
+        .arrow {
+            position: absolute;
+            left    : 2rem;
+            top     : 1.4rem;
+            display : block;
+            color: black;
+            font-size: 1.5em;
+        }
+    }
+    
 }
 
-.titre_container {
-    display        : flex;
-    width          : 100%;
-    height         : 3.9rem;
-    flex-direction : row;
-    align-content  : center;
-    justify-content: center;
-    align-items    : center;
-}
 
-header .arrow {
-    position: absolute;
-    left    : 2rem;
-    top     : 1.4rem;
-    display : block;
-    color: black;
-    font-size: 1.5em;
-}
+
